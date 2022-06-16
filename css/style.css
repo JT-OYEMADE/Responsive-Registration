@@ -1,0 +1,135 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  color: #fff;
+  background-color: hsl(0, 100%, 74%);
+}
+
+.btn-blue { background: hsl(248, 32%, 49%);}
+.btn-blue:hover { background: hsl(248, 32%, 30%);}
+.btn-green { background: hsl(154, 59%, 51%);}
+.btn-green:hover { background: hsl(154, 59%, 70%);}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.wrapper, 
+.active-wrapper {
+  height: 100vh;
+  background: url('../img/bg-intro-desktop.png') no-repeat center center/cover;
+  padding: 100px;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  align-items: center;
+}
+
+/* .wrapper::before {
+  position: absolute;
+  content: '';
+  display: block;
+  top: 0;
+  left: 0;
+  background: url('../img/bg-intro-desktop.png') no-repeat center center/cover;
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+} */
+
+.wrapper .left,
+.active-wrapper .left{
+  margin-right: 10px;
+  width: 50%;
+  padding: 20px;
+}
+
+.wrapper .left h1, 
+.active-wrapper .left h1 {
+  color: #fff;
+  font-weight: 700;
+  line-height: 2rem;
+  margin-bottom: 15px;
+}
+
+.wrapper .right, 
+.active-wrapper .right{
+  margin-left: 10px;
+  width: 50%;
+  padding: 20px;
+}
+
+.wrapper .right button,
+.active-wrapper .right button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.wrapper .right .form-wrapper,
+.active-wrapper .right .form-wrapper {
+  background: #fff;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.wrapper .right .form-wrapper input,
+.active-wrapper .right .form-wrapper input {
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  border: gray 1px solid;
+  border-radius: 5px;
+}
+
+.wrapper .right .form-wrapper button,
+.active-wrapper .right .form-wrapper button {
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  color: #fff;
+  cursor: pointer;
+}
+
+.wrapper .right p ,
+.active-wrapper .right p {
+  font-size: 10px;
+  text-align: center;
+  color: hsl(246, 25%, 77%)
+  ;
+}
+
+.wrapper .right .red,
+.active-wrapper .right .red {
+  color: hsl(0, 100%, 74%);
+}
+
+/* Active State */
+.active-wrapper .right .form-wrapper .form-group p {
+  text-align: right;
+  color: hsl(0, 100%, 74%);
+}
+
+.active-wrapper .right .form-wrapper input {
+  border-color: hsl(0, 100%, 74%);
+  color: hsl(0, 100%, 74%);
+}
+
+
+
+
+
